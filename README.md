@@ -19,3 +19,4 @@
   * Propriedades de textos e Layout Básico;
   * Flexbox e CSS Grid;
   * Responsividade.
+
