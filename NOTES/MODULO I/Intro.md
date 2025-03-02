@@ -35,7 +35,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-    </head> 
+    </head>
     <body>
       <!--Conteúdo-->
     </body>
@@ -44,7 +44,7 @@
 
 
 
-  * `<!DOCTYPE html>`: 
+  * `<!DOCTYPE html>`:
     Responsável por determinar que o arquivo em questão, se trata de um documento do HTML5;
 
   * `<html lang= "pt-BR">`:
@@ -59,21 +59,23 @@
   * `<meta name = "viewport" content = "width, initial-scale = 1.0">`:
     Basicamente, esse metadata irá configurar o _viewport_ do site, tornando-o minimamente responsivo para demais dispositivos;
 
-  * `<title> Document </head>`: 
+  * `<title> Document </head>`:
     Apresenta o nome que será escrito na aba do navegador.
 
-* `<body>`: 
+* `<body>`:
   Por último, temos a _Tag_ body, que é responsável por apresentar o conteúdo dentro da página Web, dentro dele pode conter _tags_ de titulo (`<h1>`), parágrafos (`<p>`), entre outros tipo de tags.
 
 
 ## Tags Comuns:
 
-  ### Títulos e Paragrafos:
+  ### Títulos e Parágrafos:
 
   - As tags de títulos e parágrafos servem para estruturar o texto da página, fornecendo uma maneira de organizar e formatar o conteúdo, tonando mais legível e acessível;
 
   - Para os títulos, usamos a leta "h", seguida de um número, que é responsável por determinar o nível/grau de importância. Os níveis vai de 1 a 6 e sua estrutura fica da seguinte forma:
-    <h1> Tiítulo 1</h1>
-    <h2></h2>
-    <h3></h3>
-    
+    <h1> Título Nível 1</h1>
+    <h2> Título Nível 2</h2>
+    <h3> Título Nível 3</h3>
+    <h4> Título Nível 4</h4>
+    <h5> Título Nível 5</h5>
+    <h6> Título Nível 6</h6>
