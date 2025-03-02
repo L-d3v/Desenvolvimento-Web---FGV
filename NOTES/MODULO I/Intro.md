@@ -24,20 +24,56 @@
 
 - Uma TAG também pode conter atributos, que são formas de identifica-las;
 
-### Estruturação Básica:
+## Estruturação Básica:
 
 - Todo documento escrito em HTML segue uma estrutura básica e padrão, sua estrutura é formada por um conjunto de __tags__, são elas:
 
-    `<!DOCTYPE html>`
-    `<html lang="pt-BR">`
-    `<head>`
+    ```
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head> 
+    <body>
+      <!--Conteúdo-->
+    </body>
+  </html>
+  ```
+
+
+
+  * `<!DOCTYPE html>`: 
+    Responsável por determinar que o arquivo em questão, se trata de um documento do HTML5;
+
+  * `<html lang= "pt-BR">`:
+    Tag raiz de um arquivo HTML, ela é seguida do atributo "lang", que é responsável por especificar em que idioma o site estará sendo contruido;
+
+* `<head>`:
+    Contém os metadados/metainformações sobre o documento, especificando algumas "características" do HTML. Os metadatos padrão são:
+
+  * `<meta charset = "UTF-8"> `:
+    Serve para especificar a codificação de caracteres que estará sendo utilizado;
+
+  * `<meta name = "viewport" content = "width, initial-scale = 1.0">`:
+    Basicamente, esse metadata irá configurar o _viewport_ do site, tornando-o minimamente responsivo para demais dispositivos;
+
+  * `<title> Document </head>`: 
+    Apresenta o nome que será escrito na aba do navegador.
+
+* `<body>`: 
+  Por último, temos a _Tag_ body, que é responsável por apresentar o conteúdo dentro da página Web, dentro dele pode conter _tags_ de titulo (`<h1>`), parágrafos (`<p>`), entre outros tipo de tags.
+
+
+## Tags Comuns:
+
+  ### Títulos e Paragrafos:
+
+  - As tags de títulos e parágrafos servem para estruturar o texto da página, fornecendo uma maneira de organizar e formatar o conteúdo, tonando mais legível e acessível;
+
+  - Para os títulos, usamos a leta "h", seguida de um número, que é responsável por determinar o nível/grau de importância. Os níveis vai de 1 a 6 e sua estrutura fica da seguinte forma:
+    <h1> Tiítulo 1</h1>
+    <h2></h2>
+    <h3></h3>
     
-    `</head>`
-
-
-
-  * **DOCTYPE html:** Responsável por determinar que o arquivo em questão, se trata de um documento do HTML5;
-
-* **html lang= "pt-BR":** Tag raiz de um arquivo HTML, ela é seguida do atriburo "lang", que é responsável por especificar em que idioma o site estará sendo contruido;
-
-* **head:**
