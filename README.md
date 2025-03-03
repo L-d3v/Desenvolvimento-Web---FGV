@@ -8,13 +8,13 @@
 
 # TEMAS ABORDADOS;
 
-- **No HTML:**
+- **In HTML:**
   * Intodućão ao Desenvolvimento Web;
   * Tags, Atributos e Elementos;
   * Links e Imagens;
   * Tabelas e Formulários.
 
-- **No CSS:**
+- **In CSS:**
   * Introdućão ao CSS;
   * Propriedades de textos e Layout Básico;
   * Flexbox e CSS Grid;
