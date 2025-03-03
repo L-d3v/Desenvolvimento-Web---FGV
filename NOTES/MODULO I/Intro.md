@@ -2,13 +2,18 @@
 
 - Desenvolvimento Web trata-se do processo de criação de uma página web/site ou aplicativos;
 
+
 - Ao se tratar de Desenvolvimento Web, estamos nos referindo a um conjunto de tecnologias e linguagens que trabalham em conjunto para criar e tornar as páginas interativas e funcionais;
+
 
 - Para a criação "perfeita" de uma página web, existe 3 pilares fundamentais, são eles:
 
+
   - **HTML(HyperText Markup Language):** Assim como propriamente dito, HTML é uma linguagem de marcação. Ela é responsável por determinar e estruturar o conteúdo a ser apresentado no navegador, quando acessado.
 
+
   - **CSS(Cascading Style Sheets):** O CSS pode ser dito como uma linguagem de estilização, ou seja, ela irá definir a aparência visual da página, aplicando cores, espaçamentos, layouts , alterando fontes, entre outros.
+
 
   - **JavaScript:** Diferentemente do HTML e CSS que são tecnologias para a criação de uma página web, o JavaScript é uma linguagem de programação e através do seu uso, é possível criar funcionalidades, interatividade e manipular elementos dentro de uma página Web.
 
@@ -16,11 +21,15 @@
 
 - HTML é basicamente um arquivo de texto que o navegador irá utilizar renderizar coisas na página, sendo assim, tudo que é apresentado na web se inciar e termina com HTML;
 
+
 - Para que ocorra renderização de elementos em uma página web, o HTML faz uso de TAGS que são responsáveis por marcar elementos e definir a estrutura da página
+
 
 - Uma TAG é formada através da abertura e fechamento de colchetes angulares "<tag>", onde em seu meio, estará a TAG q deseja utilizar. Porém, para o fechamento, é utilizado  uma barra no incio "</tag>";
 
+
 - Existe casos em que algumas TAGS são autofechadas, sendo assim, não possuem a TAG de fechamento ("</tag>")
+
 
 - Uma TAG também pode conter atributos, que são formas de identifica-las;
 
@@ -47,8 +56,10 @@
   * `<!DOCTYPE html>`:
     Responsável por determinar que o arquivo em questão, se trata de um documento do HTML5;
 
+
   * `<html lang= "pt-BR">`:
     Tag raiz de um arquivo HTML, ela é seguida do atributo "lang", que é responsável por especificar em que idioma o site estará sendo contruido;
+
 
 * `<head>`:
     Contém os metadados/metainformações sobre o documento, especificando algumas "características" do HTML. Os metadatos padrão são:
@@ -62,6 +73,7 @@
   * `<title> Document </head>`:
     Apresenta o nome que será escrito na aba do navegador.
 
+
 * `<body>`:
   Por último, temos a _Tag_ body, que é responsável por apresentar o conteúdo dentro da página Web, dentro dele pode conter _tags_ de titulo (`<h1>`), parágrafos (`<p>`), entre outros tipo de tags.
 
@@ -72,10 +84,116 @@
 
   - As tags de títulos e parágrafos servem para estruturar o texto da página, fornecendo uma maneira de organizar e formatar o conteúdo, tonando mais legível e acessível;
 
+
   - Para os títulos, usamos a leta "h", seguida de um número, que é responsável por determinar o nível/grau de importância. Os níveis vai de 1 a 6 e sua estrutura fica da seguinte forma:
-    <h1> Título Nível 1</h1>
-    <h2> Título Nível 2</h2>
-    <h3> Título Nível 3</h3>
-    <h4> Título Nível 4</h4>
-    <h5> Título Nível 5</h5>
-    <h6> Título Nível 6</h6>
+
+    `<h1> Essa é a estrutura de uma Tag de Título</h1>`
+        <h1> Título Nível 1</h1>
+        <h2> Título Nível 2</h2>
+        <h3> Título Nível 3</h3>
+        <h4> Título Nívl 4</h4>
+        <h5> Título Nível 5</h5>
+        <h6> Título Nível 6</h6>
+
+  - Para os parágrafos, utilizamos a _tag_ `<p>`
+
+  ### Listas:
+
+-   As listas são uteis para agrupar itens semelhantes/relacionados;
+
+
+- Além disso, as listas podem ser divididas em 2 tipos: Ordenadas e Não Ordenadas;
+
+  - Para as listas ordenadas, utiliza-se a _tag_ `<ol>`, que significa Ordered list;
+
+  - Para as listas não ordenadas, utilizamos a _tag_ `<ul>`, que significa Unordered list;
+
+
+- Para adicionarmos mais itens dentro de uma lista, fazemos o uso da _tag_ `<li>` (list item);
+
+```
+<ol>
+  <li>Primeiro item</li>
+  <li>Segundo item</li>
+  <li>Terceiro item</li>
+</ol>
+
+<------------H------------>
+
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ul>
+```
+
+### Atributos:
+
+- Os atributos servem como característica de uma _tag_, onde, para sua formação, é necessário o nome e o seu valor dentro da _tag_ de abertura;
+
+```
+<a href="https://www.example.com" target="_blank">Visite o Example</a>
+<img src="imagem.jpg" alt="Descrição da imagem">
+```
+
+- No caso acima, é possível identificar os seguintes atributos:
+
+
+1. **href:**
+    Define o link de destino para o elemento `<a>`;
+
+
+2. **target:**
+   Define em como o link será aberto, sendo possivel aplicar 4 valores:
+    - **"_blank":** Abre o documento em uma nova aba;
+    - **"_self":** Abre o documento no mesmo frame;
+    - **"_parent":** Abre o documento no frame do elemento pai;
+    - **"_top":** Abre o documento no corpo inteiro da janela. 
+   
+
+3. **src:** Define o caminho do arquivo a ser exibido na tela;
+
+
+4. **alt:** Aplicada por questões de Acessibilidade, o atributo "alt" serve para adicionar uma descrição alternativa;
+
+### Imagens:
+
+- Dentro do HTML é possível incorporar não só imagens, mas também, áudios e vídeos, porém são "menos" utilizadas;
+
+
+- Para aplicar uma imagem dentro de uma Página Web, utilizamos a _tag_ `<img>` sem alguma "restrição" do formato da imagem. Os mais comuns são:
+  
+    1. **JPEG:** Normalmente para fotografias, onde a imagem possui muitas cores;
+    
+    2. **PNG:** Suporta transparência (fundo transparente);
+
+    3. **GIF:** Curta animação com limitação de 256 cores;
+
+    4. **SVG:** Ideal para ícones e logotipos, pois não retira a qualidade;
+
+    5. **WEBp:** Formato destinado ao desenvolvimento Web, onde busca reduzir o tamanho dos arquivos para um melhor carregamento.
+
+
+- O caminho de uma imagem pode ser Relativo ou Absoluto, onde:
+
+    - Caminho Relativo especifica a localização da imagem em relação ao documento;
+  
+    - Caminho Absoluto especifica a localização completa da imagem (pode incluir o domínio).
+
+### Links e Ancoras:
+
+- Para a criação de um link, é utilizado a _tag_ `<a>`, onde o tipo desse link pode ser divido em dois:
+
+    - **Links Internos:** Apontam para um outro arquivo dentro do mesmo documento/site;
+    - **Links Externos:** Apontam para outros Sites Web.
+  
+
+- O caso das ancoras servem para criar uma conexão de uma seção presente na mesma página (Ex. Uma Landing-page);
+
+
+- Para criar essa conexão, definimos/aplicamos um `id` que servirá como identificador da seção. 
+
+```
+<h2> id = "secao1"> Seção 1 <h2>
+<a href = "#secao1"> Voltar para a Seção 1 </a> 
+```
