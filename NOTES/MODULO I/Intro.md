@@ -279,19 +279,19 @@
 - Os campos de entrada de um `input` mais comuns são:
     * Texto: Aplicando o atributo `type = "text"`;
   
-    * E-mail: Aplicando o atributo `type="email"`;
+    * **E-mail:** Aplicando o atributo `type="email"`;
   
-    * Número: Aplicando o atributo `type="number"`;
+    * **Número:** Aplicando o atributo `type="number"`;
   
-    * Senha: Aplicando o atributo `type="password"`;
+    * **Senha:** Aplicando o atributo `type="password"`;
   
-    * Data: Aplicando o atributo `type="date"`;
+    * **Data:** Aplicando o atributo `type="date"`;
   
-    * Caixa de Seleção: Aplicando o atributo `type="checkbox"`;
+    * **Caixa de Seleção:** Aplicando o atributo `type="checkbox"`;
   
-    * Botão de Rádio: Aplicando o atributo   `type="radio"`;
+    * **Botão de Rádio:** Aplicando o atributo   `type="radio"`;
   
-    * Botão de Envio: Aplicando o atributo `type="submit"`.
+    * **Botão de Envio:** Aplicando o atributo `type="submit"`.
 
 - É possível adicionar meios de validação para melhorar a experiência do usuário, são eles:
     * **required:** Indica que o campo é obrigatório para ser preenchido;
