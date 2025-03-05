@@ -12,26 +12,26 @@
   - **HTML(HyperText Markup Language):** Assim como propriamente dito, HTML é uma linguagem de marcação. Ela é responsável por determinar e estruturar o conteúdo a ser apresentado no navegador, quando acessado.
 
 
-  - **CSS(Cascading Style Sheets):** O CSS pode ser dito como uma linguagem de estilização, ou seja, ela irá definir a aparência visual da página, aplicando cores, espaçamentos, layouts , alterando fontes, entre outros.
+  - **CSS(Cascading Style Sheets):** O CSS pode ser dito como uma linguagem de estilização, ou seja, ela irá definir a aparência visual da página, aplicando cor, espaçamentos, layouts, alterando fontes, entre outros.
 
 
-  - **JavaScript:** Diferentemente do HTML e CSS que são tecnologias para a criação de uma página web, o JavaScript é uma linguagem de programação e através do seu uso, é possível criar funcionalidades, interatividade e manipular elementos dentro de uma página Web.
+  - **JavaScript:** Diferentemente do HTML e CSS são tecnologias para a criação de uma página web, o JavaScript é uma linguagem de programação e através do seu uso, é possível criar funcionalidades, interatividade e manipular elementos numa página Web.
 
 # INTRODUÇÃO AO HTML
 
-- HTML é basicamente um arquivo de texto que o navegador irá utilizar renderizar coisas na página, sendo assim, tudo que é apresentado na web se inciar e termina com HTML;
+- HTML é basicamente um arquivo de texto que o navegador irá utilizar renderizar coisas na página, sendo assim, tudo apresentado na web se inicia e termina com HTML;
 
 
-- Para que ocorra renderização de elementos em uma página web, o HTML faz uso de TAGS que são responsáveis por marcar elementos e definir a estrutura da página
+- Para ocorrer a renderização de elementos em uma página web, o HTML faz uso de TAGS responsáveis por marcar elementos e definir a estrutura da página
 
 
-- Uma TAG é formada através da abertura e fechamento de colchetes angulares "<tag>", onde em seu meio, estará a TAG q deseja utilizar. Porém, para o fechamento, é utilizado  uma barra no incio "</tag>";
+- Uma TAG é formada através da abertura e fechamento de colchetes angulares "<tag>", onde em seu meio, estará a TAG que deseja utilizar. Porém, para o fechamento, é utilizado uma barra no início "</tag>";
 
 
-- Existe casos em que algumas TAGS são autofechadas, sendo assim, não possuem a TAG de fechamento ("</tag>")
+- Existem casos em que algumas TAGS são autofechadas, sendo assim, não possuem a TAG de fechamento ("</tag>")
 
 
-- Uma TAG também pode conter atributos, que são formas de identifica-las;
+- Uma TAG também pode conter atributos, que são formas de identificá-las;
 
 ## Estruturação Básica:
 
@@ -58,11 +58,11 @@
 
 
   * `<html lang= "pt-BR">`:
-    Tag raiz de um arquivo HTML, ela é seguida do atributo "lang", que é responsável por especificar em que idioma o site estará sendo contruido;
+    Tag raiz de um arquivo HTML, ela é seguida do atributo "lang", responsável por especificar em que idioma o site estará sendo construído;
 
 
 * `<head>`:
-    Contém os metadados/metainformações sobre o documento, especificando algumas "características" do HTML. Os metadatos padrão são:
+    Contém os metadados/metainformações sobre o documento, especificando algumas "características" do HTML. Os metadata padrão são:
 
   * `<meta charset = "UTF-8"> `:
     Serve para especificar a codificação de caracteres que estará sendo utilizado;
@@ -75,7 +75,7 @@
 
 
 * `<body>`:
-  Por último, temos a _Tag_ body, que é responsável por apresentar o conteúdo dentro da página Web, dentro dele pode conter _tags_ de titulo (`<h1>`), parágrafos (`<p>`), entre outros tipo de tags.
+  Por último, temos a _Tag_ body, responsável por apresentar o conteúdo dentro da página Web, dentro dele pode conter _tags_ de título (`<h1>`), parágrafos (`<p>`), entre outros tipo de tags.
 
 
 ## Tags Comuns:
@@ -85,13 +85,13 @@
   - As tags de títulos e parágrafos servem para estruturar o texto da página, fornecendo uma maneira de organizar e formatar o conteúdo, tonando mais legível e acessível;
 
 
-  - Para os títulos, usamos a leta "h", seguida de um número, que é responsável por determinar o nível/grau de importância. Os níveis vai de 1 a 6 e sua estrutura fica da seguinte forma:
+  - Para os títulos, usamos a leta "h", seguida de um número, responsável por determinar o nível/grau de importância. Os níveis vão de 1 a 6 e sua estrutura fica da seguinte forma:
 
     `<h1> Essa é a estrutura de uma Tag de Título</h1>`
         <h1> Título Nível 1</h1>
         <h2> Título Nível 2</h2>
         <h3> Título Nível 3</h3>
-        <h4> Título Nívl 4</h4>
+        <h4> Título Nível 4</h4>
         <h5> Título Nível 5</h5>
         <h6> Título Nível 6</h6>
 
@@ -109,7 +109,7 @@
   - Para as listas não ordenadas, utilizamos a _tag_ `<ul>`, que significa Unordered list;
 
 
-- Para adicionarmos mais itens dentro de uma lista, fazemos o uso da _tag_ `<li>` (list item);
+- Para adicionarmos mais itens em uma lista, fazemos o uso da _tag_ `<li>` (list item);
 
 ```
 <ol>
@@ -144,7 +144,7 @@
 
 
 2. **target:**
-   Define em como o link será aberto, sendo possivel aplicar 4 valores:
+   Define em como o link será aberto, sendo possível aplicar 4 valores:
     - **"_blank":** Abre o documento em uma nova aba;
     - **"_self":** Abre o documento no mesmo frame;
     - **"_parent":** Abre o documento no frame do elemento pai;
@@ -161,7 +161,7 @@
 - Dentro do HTML é possível incorporar não só imagens, mas também, áudios e vídeos, porém são "menos" utilizadas;
 
 
-- Para aplicar uma imagem dentro de uma Página Web, utilizamos a _tag_ `<img>` sem alguma "restrição" do formato da imagem. Os mais comuns são:
+- Para aplicar uma imagem em uma Página Web, utilizamos a _tag_ `<img>` sem alguma "restrição" do formato da imagem. Os mais comuns são:
   
     1. **JPEG:** Normalmente para fotografias, onde a imagem possui muitas cores;
     
@@ -184,16 +184,118 @@
 
 - Para a criação de um link, é utilizado a _tag_ `<a>`, onde o tipo desse link pode ser divido em dois:
 
-    - **Links Internos:** Apontam para um outro arquivo dentro do mesmo documento/site;
+    - **Links Internos:** Apontam para outro arquivo dentro do mesmo documento/site;
     - **Links Externos:** Apontam para outros Sites Web.
   
 
-- O caso das ancoras servem para criar uma conexão de uma seção presente na mesma página (Ex. Uma Landing-page);
+- O caso das âncoras serve para criar uma conexão de uma seção presente na mesma página (Ex. Uma Landing-page);
 
 
 - Para criar essa conexão, definimos/aplicamos um `id` que servirá como identificador da seção. 
 
-```
-<h2> id = "secao1"> Seção 1 <h2>
-<a href = "#secao1"> Voltar para a Seção 1 </a> 
-```
+    ```
+    <h2> id = "secao1"> Seção 1 <h2>
+    <a href = "#secao1"> Voltar para a Seção 1 </a> 
+    ```
+
+### Tabelas e Formulários: 
+
+- Tabelas e formulários são essenciais para realizar a coleta de dados/informações dos usuários;
+
+
+- O caso das tabelas, são normalmente utilizadas como meio de organização;
+
+
+- Para criarmos uma tabela usamos _tags_ como `<tr>` que indicará a linha, `<th>` que indica uma cédula e por último `th` que indico o cabeçalho da tabela;
+
+
+- Outras tags presentes são:   
+    
+    * `<table>`: Define uma tabela;
+    * `<thead>`: Define o cabeçalho;
+    * `<tbody>`: Define o corpo da tabela;
+
+    Ex.
+        
+    ```
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>28</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>35</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+        </tbody>
+    </table>
+    ```
+
+- Em uma tabela, é possível mesclar cédulas utilizando atributos como `rowspan` ou `colspan`;
+
+
+- A `rowspan` mescla a célula com a célula de baixo, enquanto `colspan` mescla a célula com duas células à direita;
+
+
+- Agora, os formulários permitem a coleta de dados. Para a sua construção, utilizamos a _tag_ `<form>`;
+
+
+- Um formulário pode conter diversos elementos, tais como: campo de entrada, caixa de seleção, botões, entre outros;
+
+
+- A estrutura básica de um formulário é feito da seguinte forma:
+
+    ```
+    <form action="/submit" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <input type="submit" value="Enviar">
+    </form>
+    ```
+- Onde: 
+    * **action:** Trata-se de um atributo que definirá a URL para onde os dados serão enviados;
+
+    * **method:** Define o método de envio dos dados (_get_ ou _post_);
+ 
+    * **label:** Define um rótulo para um elemento do formulário;
+  
+    * **input:** Define um campo de entrada;
+
+
+- Os campos de entrada de um `input` mais comuns são:
+    * Texto: Aplicando o atributo `type = "text"`;
+  
+    * E-mail: Aplicando o atributo `type="email"`;
+  
+    * Número: Aplicando o atributo `type="number"`;
+  
+    * Senha: Aplicando o atributo `type="password"`;
+  
+    * Data: Aplicando o atributo `type="date"`;
+  
+    * Caixa de Seleção: Aplicando o atributo `type="checkbox"`;
+  
+    * Botão de Rádio: Aplicando o atributo   `type="radio"`;
+  
+    * Botão de Envio: Aplicando o atributo `type="submit"`.
+
+- É possível adicionar meios de validação para melhorar a experiência do usuário, são eles:
+    * **required:** Indica que o campo é obrigatório para ser preenchido;
+
+    * **min** e **max:** Define um valor mínimo/máximo para um campo numérico;
+
+    * **pattern:** Define um padrão de expressão regular onde o valor/resposta deve corresponder;
