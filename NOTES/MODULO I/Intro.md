@@ -277,7 +277,7 @@
 
 
 - Os campos de entrada de um `input` mais comuns são:
-    * Texto: Aplicando o atributo `type = "text"`;
+    * **Texto:** Aplicando o atributo `type = "text"`;
   
     * **E-mail:** Aplicando o atributo `type="email"`;
   
