@@ -50,9 +50,7 @@
     </body>
   </html>
   ```
-
-
-
+  
   * `<!DOCTYPE html>`:
     Responsável por determinar que o arquivo em questão, se trata de um documento do HTML5;
 
@@ -148,8 +146,8 @@
     - **"_blank":** Abre o documento em uma nova aba;
     - **"_self":** Abre o documento no mesmo frame;
     - **"_parent":** Abre o documento no frame do elemento pai;
-    - **"_top":** Abre o documento no corpo inteiro da janela. 
-   
+    - **"_top":** Abre o documento no corpo inteiro da janela.
+
 
 3. **src:** Define o caminho do arquivo a ser exibido na tela;
 
@@ -162,9 +160,9 @@
 
 
 - Para aplicar uma imagem em uma Página Web, utilizamos a _tag_ `<img>` sem alguma "restrição" do formato da imagem. Os mais comuns são:
-  
+
     1. **JPEG:** Normalmente para fotografias, onde a imagem possui muitas cores;
-    
+
     2. **PNG:** Suporta transparência (fundo transparente);
 
     3. **GIF:** Curta animação com limitação de 256 cores;
@@ -177,7 +175,7 @@
 - O caminho de uma imagem pode ser Relativo ou Absoluto, onde:
 
     - Caminho Relativo especifica a localização da imagem em relação ao documento;
-  
+
     - Caminho Absoluto especifica a localização completa da imagem (pode incluir o domínio).
 
 ### Links e Ancoras:
@@ -186,19 +184,19 @@
 
     - **Links Internos:** Apontam para outro arquivo dentro do mesmo documento/site;
     - **Links Externos:** Apontam para outros Sites Web.
-  
+
 
 - O caso das âncoras serve para criar uma conexão de uma seção presente na mesma página (Ex. Uma Landing-page);
 
 
-- Para criar essa conexão, definimos/aplicamos um `id` que servirá como identificador da seção. 
+- Para criar essa conexão, definimos/aplicamos um `id` que servirá como identificador da seção.
 
     ```
     <h2> id = "secao1"> Seção 1 <h2>
-    <a href = "#secao1"> Voltar para a Seção 1 </a> 
+    <a href = "#secao1"> Voltar para a Seção 1 </a>
     ```
 
-### Tabelas e Formulários: 
+### Tabelas e Formulários:
 
 - Tabelas e formulários são essenciais para realizar a coleta de dados/informações dos usuários;
 
@@ -209,14 +207,14 @@
 - Para criarmos uma tabela usamos _tags_ como `<tr>` que indicará a linha, `<th>` que indica uma cédula e por último `th` que indico o cabeçalho da tabela;
 
 
-- Outras tags presentes são:   
-    
+- Outras tags presentes são:
+
     * `<table>`: Define uma tabela;
     * `<thead>`: Define o cabeçalho;
     * `<tbody>`: Define o corpo da tabela;
 
     Ex.
-        
+
     ```
     <table>
         <thead>
@@ -266,31 +264,31 @@
     <input type="submit" value="Enviar">
     </form>
     ```
-- Onde: 
+- Onde:
     * **action:** Trata-se de um atributo que definirá a URL para onde os dados serão enviados;
 
     * **method:** Define o método de envio dos dados (_get_ ou _post_);
- 
+
     * **label:** Define um rótulo para um elemento do formulário;
-  
+
     * **input:** Define um campo de entrada;
 
 
 - Os campos de entrada de um `input` mais comuns são:
     * **Texto:** Aplicando o atributo `type = "text"`;
-  
+
     * **E-mail:** Aplicando o atributo `type="email"`;
-  
+
     * **Número:** Aplicando o atributo `type="number"`;
-  
+
     * **Senha:** Aplicando o atributo `type="password"`;
-  
+
     * **Data:** Aplicando o atributo `type="date"`;
-  
+
     * **Caixa de Seleção:** Aplicando o atributo `type="checkbox"`;
-  
+
     * **Botão de Rádio:** Aplicando o atributo   `type="radio"`;
-  
+
     * **Botão de Envio:** Aplicando o atributo `type="submit"`.
 
 - É possível adicionar meios de validação para melhorar a experiência do usuário, são eles:
