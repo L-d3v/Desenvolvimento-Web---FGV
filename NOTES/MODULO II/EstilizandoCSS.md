@@ -125,7 +125,7 @@ Como dito no módulo anterior, o HTML é responsável por fornecer a estrutura d
 - Dentro do CSS, podemos usar sua ampla variedade de propriedades e estilizar textos da forma que desejarmos;
 
 
-- **Propiredades de textos:***
+- **Propriedades de textos:***
 
     - **font-size:**
         Define o tamanho da fonte;
@@ -142,7 +142,7 @@ Como dito no módulo anterior, o HTML é responsável por fornecer a estrutura d
     - **line-height:**
         Controla a altura entre as linhas do texto
 
-- **Propriedades dde cores:**
+- **Propriedades de cores:**
     
     - **color:** 
         Define a cor do texto;
@@ -152,3 +152,211 @@ Como dito no módulo anterior, o HTML é responsável por fornecer a estrutura d
 
     - **boder-color:**
         Define a cor da borda;
+
+### Margens, Bordas, Padding, Dimensões:
+
+- Com o uso de algumas propriedades dentro do CSS, conseguimos controlar o espaço ao redor dos elementos;
+
+
+- Essas propriedades podem ser ditas como a base do modelo de caixa(_box model_);
+
+    - **Margin:** 
+        Define um espaço fora do elemento;
+  
+    - **Border:** 
+        Aplica um contorno em volta do elemento;
+  
+    - **Padding:**
+        Define um espaço dentro do elemento, entre o conteúdo e a borda;
+
+- Para as dimensões, podemos controlo-las usando as propriedades de `width`(largura) e `height`(altura);
+
+## Flexbox:
+
+- Para facilitar a sistribuição de espaços e no alinhamentos dos itens numa interface, podemos fazer o uso do _Flexbox_. Com ele, podemos criar layouts responsivos, alinhar itens em linha ou coluna, dentre outras opções que ele permite realizar;
+
+
+- **Propriedades para Container Flexível:**
+  
+  - `display:flex;`: 
+    Permite controlar a direção, o alinhamento e espaçamentos entre os elementos filhos;
+
+  - `flex-direction`: 
+        Define a direção dos itens dentro do container, o valores presentes são:
+        
+    - `row`(padrão): 
+        OS itens são colocados em linha;
+    
+    - `row-reverse`: 
+        Os itens são colocados em linha, mas do lado contrário/inversa;
+  
+    - `column`: 
+        Os itens são colocados em forma de coluna (um abaixo do outro);
+         
+    - `column-reverse`: 
+        Assim como o `column`, porém na ordem inversa;
+
+- **Alinhamento dos Itens:**
+
+  - Com o uso do `justify-content`, é possivel alinhar os itens de acordo com o eixo principal;
+
+  - Assim como o `flex-direction`, o justify-content também possui valores a ser adicionados. São eles:
+    
+    - `flex-start`: 
+      Define o alinhamento para "início";
+
+    - `flex-end`:
+      Define o alinhamento para o "final";
+
+    - `center`:
+      Define o alinhamento ao centro
+    
+    - `space-between`:
+      Define o alinhamneto uniformemente entre os elementos dentro do container;
+    
+    - `space-around`:
+      Define o alinhamento uniformemente ao redor dos elementos dentro do container;
+
+- **Alinhamneto no Eixo Cruzado:**
+
+- Usando a propriedade `align-items`, os elementos serão alinhados em relação ao eixo cruzado. Em caso de estar com a propriedade do flex-direction `row`, será alinhado na vertical;
+
+- Valores que podem ser adicionados:
+
+    - `stretch`:
+      Os itens serão esticados para preencher o contâiner;
+  
+    - `flex-start`:
+      Os itens são alinhados no ínicio do contâiner;
+  
+    - `flex-end`:
+      Os itens são alinhados ao final do contâiner;
+  
+    - `center`:
+      Os itens serão alinhados ao centro;
+  
+    - `baseline`:
+      Os itens serão alinhados na linha da base
+
+- **Ordem dos Itens:**
+
+- Além de propriedades destinadas ao contâiner, o `display flex` também oferece propriedades destinadas aos itens;
+
+    - `order`:
+      Define a ordem dos itens dentro do contâiner. Seu valor inical é 0, mas pode ser alterado por vlaores positivos ou negativos;
+  
+    - `flex-grow`:
+      Define a capacidade de crescimento do item para preencher o espaço vasio presente no contâiner. Inicialmente o valor é 0, desse forma o item não crescerá além do tamanho definido;
+  
+    - `flex-shrink`:
+      Ao contrário do `flex-grow`, a propriedade flex-shrink define a capacidade de encolhimento do item, quando seu espaço é limitado. Inicialmente seu valor é 1, dessa forma o item pode encolher;
+  
+    - `flex-basis`:
+      Define o tamanho inicial do item antes dele crescer ou encolher;
+
+## CSS Grid: 
+
+- Assim como o Flexbox, o CSS Grid é um sistema de layout, permitindo criar layouts com facilidade. Diferentemente do flexbox, o CSS Grid atua em formas de colunas e linhas, posicionando os itens de forma precisa;
+
+- O CSS Grid trabalha com o `display: grid`, sendo preciso especificar as linhas e colunas através das propriedades `grid-template-rows` e `grid-template-columns`, onde:
+  
+    - `grid-template-columns`:
+      Define o número e tamanho das colunas;
+  
+    - `grid-template-rows`:
+      Define o número e tamanho das linhas;
+  
+    - `gap`:
+      Define o espaçamento entre as célular da propriedade grid;
+
+- **Posicionamento Elementos Grid:**
+
+    - Com as propriedades de `grid-column` e `grid-row`, podemos posicionar os elementos dentro do Grid;
+
+        - `grid-column`:
+          Define quais colunas serão ocupadas pelo elemento grid.
+            
+            Ex.
+            ```
+            grid-column: 1 -> Ocupará a coluna 1
+            grid-column: 4 -> O item terminará na linha 4
+            grid-column: 1/3 -> O item ocupará as colunas 1 e 2, onde 3 será o começo da terceira coluna
+            ```
+
+        - `grid-row`:
+          Define quais linhas serão ocupadas pelo elemento grid.
+        
+            Ex.
+            ```
+            grid-row: 1 -> Ocupará a linha 1
+            grid-row: 4 -> Ocupará a linha 4
+            grid-row 1/3 -> Ocupará até a segunda linha, onde 3 será o inicio da terceira linha
+            ```
+
+## Técnicas de Posicionamento e Layout Responsivo:
+
+- Criar um site com um layout responsivo e que se adapte aos tamanhos de telas diversificados é ideal para tornar a experiência mais agradavél;
+
+- O posicionamento preciso dos elementos podem ser feitos através de técnicas como `position`, `z-index`, `float` e `clear`, onde:
+    
+
+- **Position:** 
+
+  - Com a propriedade `position`, podemos definir a forma em que o elemento será posicionnado na página. Essa propriedade oferece os seguintes valores:
+      
+      - `static`: 
+        Os elementos serão posicionados conforme o fluxo da página;
+    
+      - `relative`:
+        Os elementos são posicionados em relação a sua posição original;
+    
+      - `absolute`:
+        Os elementos será relativo ao container, dessa forma, posicionando mais próximo;
+    
+      - `fixed`:
+        O elemnto é posicionado em releação ao bloco de contenção, ou seja, em relação ao viewport;
+    
+      - `stick`:
+        O elemento é posicionado com base na posição de rolagem do usuário;
+
+- **Z-index:**
+
+    - A propriedade `z-index`, conseguimos controlar a sobreposição dos elementos, onde um elemento com a propriedade maiorUso do Z-Index que a de outro elemento, será apresentado "acima".
+  
+        Ex.
+        ```
+      .box1 {
+        position: absolute;
+        z-index: 1;
+        }
+
+      .box2 {
+        position: absolute;
+          z-index: 2;
+        }
+        ```
+
+- **Unidades Relativas:**
+
+- Viewport é a área visivel de uma página web e uma unidade relativa;
+
+
+- Com as unidades relativas, podemos criar uma página que se adapta dinamicamente ao tamanho da tela;
+
+
+- Algumas unidades relativas são:
+    
+    - **Porcentagem(%):** 
+      Se baseia ao tamanho do elemento pai;
+  
+    - **Viewport Width(vw):**
+      1 vw é igual será igual a 1% da largura da viewport;
+  
+    - **Viewport Height(vh):**
+      Assim como o `vw`, 1vh será igual a 1% da altura do viewport;
+
+## Adaptação para Diferentes Telas:
+
+- Media Queries é uma técnica de desing responsivo, quando usado, é possivel fazer com que o site funcione em diferentes dispositivos com diferentes tamanhos;
+
+- Com o uso da Media Querie, podemos aplicar determinados estilos em diferentes dispositivos;
