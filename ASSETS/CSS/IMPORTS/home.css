@@ -1,0 +1,31 @@
+header > .welcome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 10vh;
+}
+
+header > .welcome p{
+    line-height: 5vh;
+    font-size: 3.5rem;
+}
+
+header > .welcome h1{
+    font-size: 5rem;
+    font-weight: 200;
+    font-family: 'Train One';
+}
+
+header > .social{
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+
+ion-icon{
+    width: 4vw;
+    height: 5vh;
+    padding: 12px;
+    color: white;
+}

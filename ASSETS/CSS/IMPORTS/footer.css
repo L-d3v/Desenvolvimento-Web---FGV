@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+
+}
+
+footer > p{
+    font-size: large;
+    color: #94a1b2;
+}
