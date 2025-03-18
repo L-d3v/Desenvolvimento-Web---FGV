@@ -5,9 +5,11 @@ header > .navbar{
 }
 
 header > .navbar > nav{
+    width: 30vw;
     height: 5vh;
+    text-align: center;
     padding-top: 10px;
-    margin-top: 5px ;
+    margin-top: 0.5vh ;
     border-radius: 50px;
     box-shadow: 0 2px 5px #16161a;
     border: 2px solid #72757e;
@@ -15,7 +17,7 @@ header > .navbar > nav{
 
 header > .navbar > nav a{
     padding: 20px;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.932);
 
