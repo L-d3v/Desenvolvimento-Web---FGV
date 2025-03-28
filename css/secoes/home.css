@@ -1,0 +1,30 @@
+header{
+    color: #ffffff;
+
+    & #home{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+
+        & h1{
+            font-weight: 500;
+        }
+
+        & span{
+            font-family: "Train One";
+            font-size: 5rem;
+            font-weight: 300;
+        }
+
+        & .social{
+            display: flex;
+
+            & span{
+                font-size: 3rem;
+            }
+        }
+    }
+
+}

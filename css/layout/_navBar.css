@@ -1,0 +1,19 @@
+header{
+    & .navBar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & nav{
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        border-radius: 3.125rem;
+    }
+
+    & a{
+        color: #ffffff;
+        padding: 0rem 1rem;
+    }
+
+}

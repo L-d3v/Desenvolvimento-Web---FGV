@@ -1,0 +1,32 @@
+*{
+    font-family: 'Outfit', 'Fira Code', 'Inter', 'Train One';
+}
+
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.25rem;
+}
+
+p{
+    font-size: 1.125rem
+}
+
+a{
+    text-decoration: none;
+}

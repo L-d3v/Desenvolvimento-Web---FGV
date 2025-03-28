@@ -1,0 +1,13 @@
+/* Reset e Configurações Globais*/
+@import url('base/reset.css');
+@import url('base/global.css');
+
+/* Reutilização de Layouts */
+@import url('layout/_footer.css');
+@import url('layout/_navBar.css');
+
+/*Estilo de Páginas*/
+@import url('secoes/home.css');
+
+/* Rsponsividade (Media Queries) */
+@import url('media/_universal.css');
